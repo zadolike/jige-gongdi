@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // GitHub Pages 项目路径，需与仓库名一致：zadolike/jige-gongdi
+      // 访问地址为：https://zadolike.github.io/jige-gongdi/
+      base: '/jige-gongdi/',
       server: {
         port: 3000,
         host: '0.0.0.0',
